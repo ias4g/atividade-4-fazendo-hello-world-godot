@@ -9,7 +9,7 @@
 
 Esta atividade foi feita com o Godot 3.5, para baixar [clica aqui](https://godotengine.org/download/3.x/windows/)
 
-```
+```GDScript
 
     extends ColorRect
 
