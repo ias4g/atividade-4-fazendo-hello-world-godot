@@ -17,29 +17,29 @@ func _process(delta: float) -> void:
 	
 	if Input.get_action_strength("ui_right"):
 		right = 1
-		$Label.text = "Right"
+		$Description.text = "Right"
 		self.color = Color(255, 0, 0, 1)
 		pass
 	
 	if Input.get_action_strength("ui_left"):
 		left = -1
-		$Label.text = "Left"
+		$Description.text = "Left"
 		self.color = Color(0, 0, 0, 1)
 		pass
 	
 	if Input.get_action_strength("ui_up"):
 		up = -1
-		$Label.text = "Up"
+		$Description.text = "Up"
 		self.color = Color(0, 0, 255, 1)
 		pass
 	
 	if Input.get_action_strength("ui_down"):
 		down = 1
-		$Label.text = "Down"
+		$Description.text = "Down"
 		self.color = Color(255, 0, 255, 1)
 		pass
 	
-	if get_position().x > (width - 120):
+	if get_position().x > (width - 170):
 		right = 0
 		pass
 	
@@ -47,7 +47,7 @@ func _process(delta: float) -> void:
 		left = 0
 		pass
 	
-	if get_position().y > (height - 120):
+	if get_position().y > (height - 170):
 		down = 0
 		pass
 	
